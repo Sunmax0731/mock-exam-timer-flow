@@ -1,0 +1,15 @@
+{
+  "product": "mock-exam-timer-flow",
+  "entries": [
+    {
+      "title": "模試・タイマー実行フロー",
+      "pattern": "模試セクション、制限時間、休憩、採点メモを一連の実行フローにする",
+      "nextAction": "模試の開始、区切り、終了後レビューをタイムライン化する"
+    },
+    {
+      "title": "閉域アルファ評価",
+      "pattern": "代表データ、手動テスト、QCDS、release evidence を同時に確認する。",
+      "nextAction": "docs/traceability-matrix.md を更新する。"
+    }
+  ]
+}

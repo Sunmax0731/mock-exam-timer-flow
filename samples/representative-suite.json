@@ -1,0 +1,90 @@
+{
+  "product": "mock-exam-timer-flow",
+  "generatedAt": "2026-05-08T00:01:56Z",
+  "scenarios": [
+    {
+      "id": "happy-path",
+      "records": [
+        {
+          "title": "模試・タイマー実行フロー",
+          "duration": "模試・タイマー実行フロー duration",
+          "nextAction": "模試の開始、区切り、終了後レビューをタイムライン化する",
+          "section": "模試・タイマー実行フロー section",
+          "reviewDate": "模試・タイマー実行フロー reviewDate",
+          "id": "hp-001"
+        }
+      ],
+      "expected": {
+        "passes": 1,
+        "failures": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "missing-required",
+      "records": [
+        {
+          "duration": "模試・タイマー実行フロー duration",
+          "nextAction": "模試の開始、区切り、終了後レビューをタイムライン化する",
+          "section": "模試・タイマー実行フロー section",
+          "reviewDate": "模試・タイマー実行フロー reviewDate",
+          "id": "missing-001"
+        }
+      ],
+      "expected": {
+        "passes": 0,
+        "failures": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "id": "warning",
+      "records": [
+        {
+          "title": "模試・タイマー実行フロー",
+          "duration": "模試・タイマー実行フロー duration",
+          "nextAction": "模試の開始、区切り、終了後レビューをタイムライン化する",
+          "reviewDate": "模試・タイマー実行フロー reviewDate",
+          "id": "warn-001"
+        }
+      ],
+      "expected": {
+        "passes": 0,
+        "failures": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "id": "mixed-batch",
+      "records": [
+        {
+          "title": "模試・タイマー実行フロー",
+          "duration": "模試・タイマー実行フロー duration",
+          "nextAction": "模試の開始、区切り、終了後レビューをタイムライン化する",
+          "section": "模試・タイマー実行フロー section",
+          "reviewDate": "模試・タイマー実行フロー reviewDate",
+          "id": "mixed-ok-001"
+        },
+        {
+          "title": "模試・タイマー実行フロー",
+          "duration": "模試・タイマー実行フロー duration",
+          "section": "模試・タイマー実行フロー section",
+          "reviewDate": "模試・タイマー実行フロー reviewDate",
+          "id": "mixed-bad-001"
+        },
+        {
+          "title": "模試・タイマー実行フロー",
+          "duration": "模試・タイマー実行フロー duration",
+          "nextAction": "模試の開始、区切り、終了後レビューをタイムライン化する",
+          "reviewDate": "模試・タイマー実行フロー reviewDate",
+          "id": "warn-001"
+        }
+      ],
+      "expected": {
+        "passes": 1,
+        "failures": 1,
+        "warnings": 1
+      }
+    }
+  ]
+}
