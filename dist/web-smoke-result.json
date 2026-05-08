@@ -1,0 +1,15 @@
+{
+  "product": "mock-exam-timer-flow",
+  "result": "passed",
+  "method": "chrome-headless-file-screenshot",
+  "browser": "chrome.exe",
+  "index": "public/index.html",
+  "checks": {
+    "nonBlankScreenshot": true,
+    "htmlHasContent": true,
+    "productMarker": true,
+    "noFrameworkOverlay": true
+  },
+  "screenshotBytesStableThreshold": ">1000",
+  "manualBrowserTest": "not-run-by-codex"
+}

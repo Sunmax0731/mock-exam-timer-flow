@@ -1,0 +1,13 @@
+{
+  "product": "mock-exam-timer-flow",
+  "title": "模試・タイマー実行フロー",
+  "domain": "EducationLearning",
+  "ideaNo": 3,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "GitHub Pages / GitHub Release",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
